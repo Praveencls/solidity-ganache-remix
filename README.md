@@ -69,3 +69,4 @@ Step to deploy the contract:
 5. After connected, we've got the same account in `remix account` and `ganache account`. ![img](assets/remix-account-same.png) ![img](assets/ganache-account-same.png)
 6. In Remix, we `Deploy` the smart contract to some account. And we can see the contract. ![img](assets/remix-deployed.png)
 7. In Ganache, we can see our contract in `Blocks` tab: ![img](assets/ganache-deployed-blocks.png) And in the `Transactions` tab: ![img](assets/ganache-deployed-transactions.png)
+8. We can run all contracts here. : ![img](assets/Deployed-Contracts.png)
