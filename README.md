@@ -49,3 +49,23 @@ Follow these steps:
 4. After we submit `Confirm`. We will redirect to `Transaction Queue Section`. ![img](assets/metamask-transaction-queue.png) 
 5. After waiting for the pending, the transaction will be updated to History Section. ![img](assets/metamask-transaction-history.png)
 6. Congratulations, we have successfully send the coin ! You can see also in Ganache Balance are updated. ![img](assets/ganache-after-transaction.png)
+
+## Smart Contract Remix to Ganache
+
+First, we need to create the smart contract.
+```solidity
+pragma solidity ^0.8.0;
+
+contract JobPortal {
+   
+}
+```
+
+Step to deploy the contract:
+1. Run the `Ganache` and choose `Quick Start`. Then we see the accounts ![img](assets/ganache-account.png)
+2. Open Remix Browser, and select the localhost. ![img](assets/remix-local.png)
+3. In Remix, open tab Deploy then choose Environment `External HTTP Provider`. ![img](assets/remix-external-http-provider.png)
+4. Update the url & port to follow the Ganache `RPC Server`. Which in this case is `http://127.0.0.1:7545` ![img](assets/ganache-rpc-server.png)
+5. After connected, we've got the same account in `remix account` and `ganache account`. ![img](assets/remix-account-same.png) ![img](assets/ganache-account-same.png)
+6. In Remix, we `Deploy` the smart contract to some account. And we can see the contract. ![img](assets/remix-deployed.png)
+7. In Ganache, we can see our contract in `Blocks` tab: ![img](assets/ganache-deployed-blocks.png) And in the `Transactions` tab: ![img](assets/ganache-deployed-transactions.png)
